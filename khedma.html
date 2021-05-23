@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<title>Mina Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* The Modal (background) */
+
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Add Animation */
+
+    .modal-content {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+
+</style>
+
+<body id="myPage" style="text-align: -webkit-center; " background="\images\shelf-bg.jpg">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <h3 align="center">Welcome to our App Store</h3>
+        </div>
+    </div>
+    <!-- Image Header -->
+    <div class="w3-display-container w3-animate-opacity">
+        <img src="\images\sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+    </div>
+    <!-- Work Row -->
+
+    <div class="divcustom" style="background-color: white; border-radius: 10px; display: block; margin-left:25px; margin-top:20px; margin-right:25px; margin-bottom:20px;" align="center">
+        <div style=" width: 100%; height: 100%; display: block; padding: 20px;" align="center">
+            <table style="padding: 10px; width: 100%;height: 100%;">
+                <tr>
+                    <td style="text-align: center; height: 100px; width: 100px">
+                        <img src="\images\khedma\icon.png" style=" height: 100px; width: 100px">
+                    </td>
+                    <td style="text-align: left; padding-left: 20px;width: 100%;">
+                        <label>Khedma</label>
+                        <br/>
+                        <label>(الخدمة الكنسيه)</label>
+                        <br/>
+                        <label>هدف البرنامج تسهيل متابعة الخدمة من خلال تليفونك</label>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; vertical-align: bottom;" colspan="2">
+                        <input type="button" value="Download" onclick="window.location.href='http://www.mediafire.com/file/xy6tdicww027a80/Khedma.apk'" style="width:108px;height:34px; border:1px solid #79b530;background-color:transparent;-webkit-font-smoothing:antialiased;color:#79b530;text-align:center;cursor:pointer;margin:1px 4px 0;line-height:1.5;padding:7px 12px;font-size:12px;
+                        font-weight:700;text-decoration:none;border-radius:2px " />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding-left: 40px; padding-right: 40px;" align="center">
+            <div style="border-bottom: 1px solid gray;" align="center"></div>
+        </div>
+        <div style="  width: 100%; height: 100%; overflow-x: auto; padding-top: 20px; padding-bottom: 20px;" align="center">
+            <table>
+                <tr>
+                    <td style="padding-left: 10px;"><img onclick="showhide()" src="\images\khedma\icon1.png" style=" height: 200px; width: 100px"></td>
+                    <td style="padding-left: 10px;"><img onclick="showhide()" src="\images\khedma\icon2.png" style=" height: 200px; width: 100px"></td>
+                    <td style="padding-left: 10px;"><img onclick="showhide()" src="\images\khedma\icon3.png" style=" height: 200px; width: 100px"></td>
+                    <td style="padding-left: 10px;"><img onclick="showhide()" src="\images\khedma\icon4.png" style=" height: 200px; width: 100px"></td>
+                    <td style="padding-left: 10px;"><img onclick="showhide()" src="\images\khedma\icon5.png" style=" height: 200px; width: 100px"></td>
+                    <td style="padding-left: 10px; padding-right: 10px;"><img onclick="showhide()" src="\images\khedma\icon6.png" style=" height: 200px; width: 100px"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding-left: 40px; padding-right: 40px;" align="center">
+            <div style="border-bottom: 1px solid gray;" align="center"></div>
+        </div>
+        <div style="  width: 100%; height: 100%; padding-top: 20px; padding-bottom: 20px;" align="center">
+            <div style="text-align: right; direction: rtl; width: 90%; height: 100%;">
+                <label style="font-size: 15px; font-family: Tahoma;">محتوى البرنامج:</label>
+                <br/>
+                <label style="font-size: 15px; font-family: Tahoma;">-    تسجيل بيانات الخدام</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    تسجيل بيانات المخدومين</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    عرض بيانات الخدام</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    عرض بيانات المخدومين</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    تسجيل حضور الخدام</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    تسجيل حضور المخدومين</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    عرض حضور الخدام</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    عرض حضور المخدومين</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    متابعة اعياد ميلاد الخدام</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    متابعة اعياد ميلاد المخدومين</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    إمكانية تصدير / إستيراد بيانات الخدام</label>
+                <br/>
+                <label style="font-size: 14px; font-family: Tahoma;">-    إمكانية تصدير / إستيراد بيانات المخدومين</label>
+                <br/>
+            </div>
+        </div>
+        <div style="padding-left: 40px; padding-right: 40px;" align="center">
+            <div style="border-bottom: 1px solid gray;" align="center"></div>
+        </div>
+        <div style="  width: 100%; height: 100%; display: block; padding: 20px;" align="center">
+            <table style="padding: 10px; width: 100%;height: 100%;">
+                <tr>
+                    <td style="text-align: left;">
+                        <label>WHAT'S NEW</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <label>-    Improvements for reliability and speed</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding-left: 40px; padding-right: 40px;" align="center">
+            <div style="border-bottom: 1px solid gray;" align="center"></div>
+        </div>
+        <div style=" width: 100%; height: 100%; display: block; padding: 20px;" align="left">
+            <div style="display: inline-table; padding-left: 20px; width: 150px;" align="left">
+                <label>Updated</label>
+                <br/>
+                <label>16/4/2018</label>
+                <br/>
+                <br/>
+            </div>
+            <div style="display: inline-table; padding-left: 20px; width: 150px;" align="left">
+
+                <label>Size</label>
+                <br/>
+                <label>20.24 MB</label>
+                <br/>
+                <br/>
+            </div>
+            <br/>
+            <div style="display: inline-table; padding-left: 20px; width: 150px;" align="left">
+                <label>Current Version</label>
+                <br/>
+                <label>V 1.1</label>
+                <br/>
+                <br/>
+            </div>
+            <div style="display: inline-table; padding-left: 20px; width: 150px;" align="left">
+                <label>Permissions</label>
+                <br/>
+                <label style="font-size: 15px;">-    modify or delete the contents of yourSD card</label>
+                <br/>
+                <label style="font-size: 15px;">-    read the contents of yourSD card</label>
+                <br/>
+                <label style="font-size: 15px;">-    full network access</label>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d1 w3-center w3-padding-small">
+        <div style="padding-right:15px;padding-left:15px">
+            <div style="float: left;">
+                <p>&copy; Mina Abdo 2018</p>
+            </div>
+            <div style="float: right;">
+                <div style="float: left;">
+                    <p style="padding-right:15px;vertical-align:center">Contact Us</p>
+                </div>
+                <div style="float: right;">
+                    <p>
+                        <a href="https://www.facebook.com/MinaAbdo.2015" title="Facebook" style="vertical-align:top">
+					       <img class="siteFooter-module_socialIcon_2hfay" alt="Facebook" title="Facebook" src="\images\icon-facebook.svg">
+					   </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="myModal" class="modal" style="display: none; width: 100%; height: 100%; padding-top: 20px; padding-bottom: 20px; vertical-align: middle;" align="center">
+        <span class="close">&times;</span>
+        <div style="width: 100%; height: 100%; overflow-x: auto;" align="center">
+            <table style="height: 100%;">
+                <tr>
+                    <td style="padding-left: 10px;"><img src="\images\khedma\icon1.png" style=" height: 481px; width: 271px"></td>
+                    <td style="padding-left: 10px;"><img src="\images\khedma\icon3.png" style=" height: 481px; width: 271px"></td>
+                    <td style="padding-left: 10px;"><img src="\images\khedma\icon4.png" style=" height: 481px; width: 271px"></td>
+                    <td style="padding-left: 10px;"><img src="\images\khedma\icon5.png" style=" height: 481px; width: 271px"></td>
+                    <td style="padding-left: 10px; padding-right: 10px;"><img src="\images\khedma\icon6.png" style=" height: 481px; width: 271px"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+
+        function showhide() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = (modal.style.display == 'block') ? 'none' : 'block';
+        }
+
+    </script>
+</body>
+
+</html>
